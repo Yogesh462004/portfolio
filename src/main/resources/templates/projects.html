@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .project-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .project-img {
+            width: 350px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .project-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project-img {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div th:fragment="projects">
+
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0">
+                    <span class="text-gradient d-inline">Projects</span>
+                </h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+
+                    <!-- PROJECT 1 -->
+                    <div class="card shadow rounded-4 border-0 mb-5">
+                        <div class="project-card">
+                            <div>
+                                <h2 class="fw-bolder">&nbsp;&nbsp;&nbsp;Image Background Remover</h2>
+                                <p>
+                                    Developed a full-stack web application to automatically
+                                    detect and remove image backgrounds using AI segmentation models.
+                                    Implemented secure authentication using Clerk and JWT.
+                                    Integrated Razorpay and Stripe for payments.
+                                </p>
+                                <p><strong>Tech Stack:</strong> Spring Boot, React.js,
+                                    Tailwind CSS, MySQL, JWT, Clerk</p>
+                            </div>
+
+                            <img class="project-img"
+                                 src="assets/images/p1.png"
+                                 alt="Image Background Remover"/>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2 -->
+                    <div class="card shadow rounded-4 border-0 mb-5">
+                        <div class="project-card">
+                            <div>
+                                <h2 class="fw-bolder">&nbsp;&nbsp;&nbsp;Online Car Parking Management System</h2>
+                                <p>
+                                    Designed and developed a microservices-based car parking
+                                    management system with booking, slot allocation,
+                                    and authentication using JWT.
+                                </p>
+                                <p><strong>Tech Stack:</strong> Spring Boot, Microservices,
+                                    Servlets, JSP, JDBC, JWT</p>
+                            </div>
+
+                            <img class="project-img"
+                                 src="assets/images/p2.png"
+                                 alt="Car Parking Management System"/>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="card shadow rounded-4 border-0">
+                        <div class="project-card">
+                            <div>
+                                <h2 class="fw-bolder">
+                                    &nbsp;&nbsp;&nbsp;Adaptive Music Recommendation
+                                </h2>
+                                <p>
+                                    Built an intelligent recommendation system that suggests
+                                    music based on detected human emotions using machine learning.
+                                </p>
+                                <p><strong>Tech Stack:</strong> Python, Machine Learning</p>
+                            </div>
+
+                            <img class="project-img"
+                                 src="assets/images/p3.png"
+                                 alt="Music Recommendation System"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>

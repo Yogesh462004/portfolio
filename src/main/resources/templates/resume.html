@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+<div class="container px-5 my-5" th:fragment="resume">
+
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0">
+            <span class="text-gradient d-inline">Resume</span>
+        </h1>
+    </div>
+
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+            <!-- ================= EXPERIENCE ================= -->
+            <section>
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+
+                    <!-- Download Resume Button -->
+                    <a class="btn btn-primary px-4 py-2"
+                       href="https://drive.google.com/uc?export=download&id=1DNPHnSpd_UM0hph3rafYq2TkFEEnBH6p"
+                       target="_blank">
+                        <i class="bi bi-download me-2"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <!-- Experience 1 -->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-primary fw-bolder mb-2">
+                                        Jul 2025 – Aug 2025
+                                    </div>
+                                    <div class="small fw-bolder">
+                                        Java Software Developer (Intern)
+                                    </div>
+                                    <div class="small text-muted">
+                                        NativeSoftTech
+                                    </div>
+                                    <div class="small text-muted">
+                                        Bengaluru, Karnataka · Hybrid
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                Worked on backend development using Spring Boot,
+                                developed REST APIs, and contributed to enterprise-level applications.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-primary fw-bolder mb-2">
+                                        Nov 2024 – May 2025
+                                    </div>
+                                    <div class="small fw-bolder">
+                                        Java Full Stack Development Intern
+                                    </div>
+                                    <div class="small text-muted">
+                                        Naresh i Technologies
+                                    </div>
+                                    <div class="small text-muted">
+                                        Hyderabad · Remote
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                Gained 7 months of hands-on experience designing and
+                                developing RESTful APIs using Spring Boot.
+                                Worked on backend logic, database integration,
+                                authentication using JWT, and microservices concepts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= EDUCATION ================= -->
+            <section>
+                <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+
+                <!-- BE -->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="bg-light p-4 rounded-4 text-center text-lg-start">
+                            <div class="text-secondary fw-bolder mb-2">
+                                2022 – 2026
+                            </div>
+                            <div class="small fw-bolder">
+                                B.E - Computer Science & Engineering
+                            </div>
+                            <div class="small text-muted">
+                                SDM College of Engineering & Technology
+                            </div>
+                            <div class="small text-muted">
+                                CGPA: 8.98 / 10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PUC -->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="bg-light p-4 rounded-4 text-center text-lg-start">
+                            <div class="text-secondary fw-bolder mb-2">
+                                2020 – 2022
+                            </div>
+                            <div class="small fw-bolder">
+                                Senior Secondary (XII)
+                            </div>
+                            <div class="small text-muted">
+                                SES PU Science & Commerce College
+                            </div>
+                            <div class="small text-muted">
+                                Percentage: 93.60%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10th -->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="bg-light p-4 rounded-4 text-center text-lg-start">
+                            <div class="text-secondary fw-bolder mb-2">
+                                2019 – 2020
+                            </div>
+                            <div class="small fw-bolder">
+                                Secondary (X)
+                            </div>
+                            <div class="small text-muted">
+                                Excellent English Medium High School
+                            </div>
+                            <div class="small text-muted">
+                                Percentage: 86.60%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= SKILLS ================= -->
+            <section>
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+
+                        <h3 class="fw-bolder mb-4">
+                            <span class="text-gradient d-inline">Technical Skills</span>
+                        </h3>
+
+                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Java</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Spring Boot</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Microservices</div></div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">MySQL</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Oracle</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Spring Security & JWT</div></div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">React.js</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Tailwind CSS</div></div>
+                            <div class="col"><div class="bg-light rounded-4 p-3 h-100">Git & GitHub</div></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
